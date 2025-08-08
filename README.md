@@ -7,18 +7,16 @@ This project examines how Bitcoin market emotions (Fear & Greed Index) relate to
 ## Dataset Information
 
 **Fear & Greed Index Data:**
-- Daily sentiment scores from 2018-2024
-- 2,646 records with classifications (Extreme Fear to Extreme Greed)
+- Records with classifications (Extreme Fear to Extreme Greed)
 
 **Hyperliquid Trading Data:**
-- 211,226 individual trades from December 2024
 - Includes account info, trade sizes, profits/losses, timestamps
 
 ## Setup Instructions
 
 Install required packages:
 ```bash
-pip install pandas numpy matplotlib seaborn plotly jupyter
+pip install pandas numpy matplotlib seaborn plotly jupyter kaleido pillow
 ```
 
 Run the analysis:
@@ -34,11 +32,7 @@ ds_user/
 ├── notebook_2.ipynb          # Advanced risk analytics
 ├── csv_files/                 # Data files
 ├── outputs/                   # Charts and graphs
-├── TRADING_CONCEPTS_EXPLAINED.md     # Trading basics
-├── DATA_SCIENCE_CONCEPTS_EXPLAINED.md # Technical concepts
-├── NOTEBOOK_1_CODE_EXPLAINED.md      # Code walkthrough
-├── NOTEBOOK_2_CODE_EXPLAINED.md      # Advanced code
-└── README.md                  # This file
+└── README.md                  
 ```
 
 ## What the Analysis Does
@@ -72,15 +66,6 @@ ds_user/
 - Weekend trading behaves differently
 - Weekly cycles affect profitability
 
-## Documentation Files
-
-**For Beginners:**
-- `TRADING_CONCEPTS_EXPLAINED.md` - Basic trading terms and concepts
-- `DATA_SCIENCE_CONCEPTS_EXPLAINED.md` - Statistics and ML basics
-
-**Code Explanations:**
-- `NOTEBOOK_1_CODE_EXPLAINED.md` - Line-by-line code walkthrough
-- `NOTEBOOK_2_CODE_EXPLAINED.md` - Advanced techniques explained
 
 ## Technical Features
 
@@ -90,8 +75,3 @@ ds_user/
 - Machine learning pattern recognition
 - Risk-adjusted performance metrics
 
-## Notes
-
-The analysis uses real trading data to test whether market sentiment can predict profitable trading opportunities. All strategies are backtested on historical data, but past performance doesn't guarantee future results.
-
-**Warning:** Trading involves significant risk. This analysis is for educational purposes only.
